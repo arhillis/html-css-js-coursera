@@ -12,13 +12,6 @@ body {
   border: 0;
 }
 
-#logo-img {
-  background: url('../images/logo.png') no-repeat;
-  width: 150px;
-  height: 150px;
-  margin: 10px 15px 10px 0;
-}
-
 .navbar-brand {
   padding-top: 25px;
 }
@@ -36,6 +29,7 @@ body {
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
+
 }
 .navbar-brand p { /* Kosher cert */
   color: #000;
@@ -83,3 +77,48 @@ body {
 }
 /* END HEADER */
 
+/********** Large Devices only ************/
+@media (min-width: 1200px){
+  #logo-img {
+    background: url('../images/logo-lg.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+  }
+}
+
+/********** Medium Devices only ************/
+@media (min-width: 992px) and (max-width: 1199px){
+
+  #logo-img {
+    background: url('../images/logo-md.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 0 5px 5px 0;
+  }
+}
+
+/********** Small Devices only ************/
+@media (min-width: 768px) and (max-width: 991px){
+  
+}
+
+/********** Extra small Devices only ************/
+@media (max-width: 767px){
+  /*Header*/
+  .navbar-brand{
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1{
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  .navbar-brand p{
+    font-size: 0.6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img{
+    height: 20px;
+  }
+}
